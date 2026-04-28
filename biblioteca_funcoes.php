@@ -59,10 +59,41 @@ namespace geometria;{
 }
 
 
+namespace saude;{
+
+function calcularImc($peso, $altura){
+    return $peso / ($altura * $altura);
+}
+
+function valorIdealAgua($peso){
+    return $peso * 35;
+}
+
+function frequenciaCardiacaMaxima($idade){
+    return 208 - 0.7 * $idade;
+}
+
+function converterLibrasParaQuilo($libras){
+    return $libras * 0.4536;
+}
+
+function calcularCaloriasBasais($peso, $idade, $sexo, $altura){
+    if ($sexo == "masculino"){
+        //formulas para homens
+        return $calorias = (10 * $peso) + (6.25 * $altura) - (5 * $idade) + 5;
+        }
+    else{
+        //Formulas para mulheres 
+    $calorias = (10 * $peso) + (6.25 * $altura) - (5 * $idade) - 161;
+    } 
+
+    return $calorias;
+}
 
 
 
 
 
+}
 
-
+?>

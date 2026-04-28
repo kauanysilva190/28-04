@@ -18,17 +18,23 @@ use function geometria\areaCirculo;
 use function geometria\areaTrapezio;
 
 
-echo "\narea do quadrado: ", areaQuadrado(4);
+//saude
 
-echo "\narea do retangulo: ",  areaRetangulo(8,8);
+use function saude\calcularIMC;
+use function saude\ValorIdealAgua;
+use function saude\frequenciaCardiacaMaxima;
+use function saude\converterLibrasParaQuilo;
+use function saude\calcularCaloriasBasais;
 
-echo "\narea do triangulo: ", areaTriangulo(9,6);
+echo "\nO seu valor do seu IMC é: ", calcularimc(90, 1, 96);
 
-echo "\narea do circulo: ", areaCirculo(7);
+echo "\nA sua quantidade miníma de água é de: ", ValorIdealAgua(90);
 
-echo "\narea do trapezio: ", areaTrapezio(9,5,8);
+echo "\nA sua frequência cardíaca máxima é: ", frequenciaCardiacaMaxima(17);
 
+echo "\nO seu peso de libras para quilos é: ", converterLibrasParaQuilo(198.416);
 
+echo "\nA suas basais é de: ", calcularCaloriasBasais(90, 17, "masculino", 1,96);
 
 
 
